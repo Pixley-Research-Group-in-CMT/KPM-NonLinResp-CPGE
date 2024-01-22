@@ -1,0 +1,13 @@
+name = "CPGE"
+uuid = "92c82d3b-90b6-4bbd-92f4-336ff5e2a7a3"
+authors = ["Ang-Kun Wu"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
