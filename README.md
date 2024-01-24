@@ -18,7 +18,10 @@ This gives rise to the KPM expression
 
 <img width="479" alt="image" src="https://github.com/Pixley-Research-Group-in-CMT/KPM-NonLinResp-CPGE/assets/5032322/1d366e81-a6f3-485b-a172-eaba7f2cef6d">
 
-where $\Lambda$ is defined in the appendix of the draft.
+where $\Lambda$ is given by
+
+<img width="616" alt="image" src="https://github.com/Pixley-Research-Group-in-CMT/KPM-NonLinResp-CPGE/assets/5032322/51f554ac-287b-48d4-9ec2-75a17e07bd2e">
+
 
 
 How to use the code base in the repo:
