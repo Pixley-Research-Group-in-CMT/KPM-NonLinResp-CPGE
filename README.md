@@ -2,7 +2,7 @@
 
 Physics of the repo:
 
-Model based computation of the circularly polarized photogalvanic effect (CPGE) based in 3D chiral Weyl semimetals using a triple Chebyshev expansion within the kernel polynomial method (KPM) approach in https://arxiv.org/a/pixley_j_1.html. Based on a time reversal broken Weyl semimetal, we break the mirror symmetries making it chiral with Weyl nodes at two different places in energy. As a result, the CPGE
+Model based computation of the circularly polarized photogalvanic effect (CPGE) based in 3D chiral Weyl semimetals using a triple Chebyshev expansion within the kernel polynomial method (KPM) approach in [https://arxiv.org/a/pixley_j_1.html](https://arxiv.org/abs/2312.14244). Based on a time reversal broken Weyl semimetal, we break the mirror symmetries making it chiral with Weyl nodes at two different places in energy. As a result, the CPGE
 
 <img width="493" alt="image" src="https://github.com/Pixley-Research-Group-in-CMT/KPM-NonLinResp-CPGE/assets/5032322/62a568e2-9d07-4a20-ab05-1c6b0d6a0c67">
 
