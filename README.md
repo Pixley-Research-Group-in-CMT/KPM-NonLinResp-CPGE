@@ -47,7 +47,7 @@ export dispersion, spectrum
 ```
 All the KPM functionalities are from the KPM.jl package.
 
-To utilize the package to obtain the non-linear response, the example codes are in the folder `examples`. The logica flow to compute large-scale disordered is, to first run the codes
+To utilize the package to obtain the non-linear response, the example codes are in the folder `examples`. The logica flow to compute large-scale disordered results is to first run the codes
 ```julia
 julia collectHdis.jl 1
 ```
