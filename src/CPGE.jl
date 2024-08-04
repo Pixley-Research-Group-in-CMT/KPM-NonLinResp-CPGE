@@ -1,8 +1,7 @@
 module CPGE
 
-using Documenter
-# Write your package code here.
 export TwoBandModel,velocityOperator,generatePotDisorder
+export dispersion, spectrum, pathInMomentum
 include("model.jl")
 
-end
+end # model CPGE
