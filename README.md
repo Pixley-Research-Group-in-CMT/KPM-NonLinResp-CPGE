@@ -2,7 +2,7 @@
 
 Physics of the repo:
 
-Model based computation of the circularly polarized photogalvanic effect (CPGE) based in 3D chiral Weyl semimetals using a triple Chebyshev expansion within the kernel polynomial method (KPM) approach in https://arxiv.org/abs/2312.14244. Based on a time reversal broken Weyl semimetal, we break the mirror symmetries making it chiral with Weyl nodes at two different places in energy. As a result, the CPGE
+Model based computation of the circularly polarized photogalvanic effect (CPGE) based in 3D chiral Weyl semimetals using a triple Chebyshev expansion within the kernel polynomial method (KPM) approach in https://arxiv.org/abs/2312.14244 (https://doi.org/10.1103/PhysRevB.110.014201). Based on a time reversal broken Weyl semimetal, we break the mirror symmetries making it chiral with Weyl nodes at two different places in energy. As a result, the CPGE
 
 <img width="493" alt="image" src="./images/fig1.png">
 <!--Text-->
@@ -62,3 +62,5 @@ Then, use `collectGammaPartial.jl` to obtain the triple KPM expansion $\Lambda$ 
 The code `combineResults.jl` will average the KPM moments of the $100$ samples and combines them into one set of $\Lambda^{xyz}, \Lambda^{yxz}$.
 
 Finally, `CPGEfromGammaNCs.jl` will generate the CPGE response from the KPM moments with various expansion order $N_C$.
+
+Folders with `HPCBackup` contains codes for various HPC systems and `codes` folder contains all the raw codes.

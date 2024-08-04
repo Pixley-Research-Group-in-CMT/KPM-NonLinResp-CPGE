@@ -154,7 +154,7 @@ end
 function indToPos(ind,L)
 	ind = div(ind+1,2)
 	rz = (ind-1) % L + 1
-c	ind = div((ind - rz),L)
+	ind = div((ind - rz),L)
 	ry = (ind-1)%L + 2
 	ind = div((ind - ry),L)
 	rx = (ind-1)%L + 2
