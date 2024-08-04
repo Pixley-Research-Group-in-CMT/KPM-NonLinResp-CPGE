@@ -1,0 +1,28 @@
+# Our executable is the main program or script that we've created
+# to do the 'work' of a single job.
+executable = runosgjulia.sh
+arguments = $(Process)
+transfer_input_files = ../julia-1.7.1-linux-x86_64.tar.gz, ../julia-packages.tar.gz, collectGammaPartial.jl, stash:///osgconnect/public/angkunwu/CPGEdata/HdisL100gam08W2035dis$(Process).jld2
+should_transfer_files   = Yes
+when_to_transfer_output = ON_EXIT
+
+# We need to name the files that HTCondor should create to save the
+# terminal output (stdout) and error (stderr) created by our job.
+# Similarly, we need to name the log file where HTCondor will save
+# information about job execution steps.
+output        = job.$(Cluster).$(Process).out
+error         = job.$(Cluster).$(Process).error
+log           = job.$(Cluster).$(Process).log
+requirements   = (OSGVO_OS_STRING == "RHEL 7") && (GPUs_GlobalMemoryMb >= 8192) && (GPUs_Capability >= 8.0)
+STASH_LOCATION = stash:///osgconnect/public/angkunwu/CPGEdata
+transfer_output_remaps="GammaxyzL100gam08D6NC512W2035NR1Sam$(Process).jld2 = $(STASH_LOCATION)/GammaxyzL100gam08D6NC512W2035NR1Sam$(Process).jld2"
+#transfer_output_remaps="GammayxzL100gam08D6NC512W2035NR1Sam$(Process).jld2 = $(STASH_LOCATION)/GammayxzL100gam08D6NC512W2035NR1Sam$(Process).jld2"
+
+# request the resources that this job will need:
+request_gpus   = 1
+request_cpus   = 1
+request_memory = 20GB
+request_disk   = 16GB 
+# how many jobs to queue
+queue 50
+#queue Process from samples.txt
